@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Cinzel&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cairo;
+}
+.App {
+    background: #e0e8eb;
+    min-height: 100vh;
+    height: 100%;
+}
+.Container{
+    height: 100%;
+    margin: auto;
+    width: 800px;
+}
+.Header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.Header button {
+    padding: 15px 20px;
+    margin-top: 50px;
+    color: white;
+    background: #713FFF;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    width: 160px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 6px 28px 0px rgba(0,0,0,0.1);
+    transition: 0.7s;
+}
+.Header h1 {
+    margin-top: 50px;
+}
+.Header button:hover{
+    transform: scale(1.05);
+}
+.Task--Container {
+    min-height: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+    box-shadow: 1px 6px 28px 0px rgba(0,0,0,0.05);
+    background: white;
+    border-radius: 15px;
+}
+.task--buttons{
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+}
+.task--button img{
+    height: 30px;
+}
+.task--button{
+    cursor: pointer;
+}
+.task--status{
+    background-color: #F5F5F5;
+    padding: 10px 15px;
+    opacity: 0.7;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.task--status p {
+    font-size: 14px;
+}
+.tasks--titles {
+    opacity: 0.7;
+}
+.Add--Task--Container{
+    height: 350px;
+    background: white;
+    width: 600px;
+    position: absolute;
+    box-shadow: 1px 6px 28px 0px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    top: 30%;
+    right: 33%;
+}
+.add--task--header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.add--task--header h1{
+    margin-left: 50px;
+}
+.add--task--header p{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.add--task--input, .add--task--priorites h2 {
+    opacity: 0.7;
+    margin-left: 50px;
+}
+.add--task--input input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    width: 450px;
+}
+.priority--list {
+    margin-left: 50px;
+    display: flex;
+    margin-top: 15px;
+    width: 300px;
+    justify-content: space-between;
+}
+.priority--list p{
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    user-select: none;
+    border-radius: 10px;
+}
+.Add--Task--Container button{
+    padding: 10px 20px;
+    margin-top: 0px;
+    float: right;
+    color: white;
+    border: none;
+    background-color: gray;
+    outline: none;
+    font-weight: bold;
+    height: 40px;
+    box-shadow: 1px 6px 28px 0px rgba(0,0,0,0.1);
+    width: 70px;
+    border-radius: 10px;
+    margin-right: 50px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.Add--Task--Container button:hover{
+    transform: scale(1.05);
+}
+.task--description{
+    width: 100px;
+}
