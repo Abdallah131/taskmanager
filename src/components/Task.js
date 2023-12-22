@@ -103,6 +103,45 @@ export default function Task(props) {
             console.log("Error: ", err);
         });
     }
+    const getLoaderStyle = () => {
+        switch (status) {
+            case "To Do":
+                return {
+                    transition: "0.7s",
+                    position: "relative",
+                    borderRadius: "50%",
+                    width: "20px",
+                    height: "20px",
+                    backgroundColor: "transparent",
+                    border: "2px solid gray",
+                    opacity : "0.4"
+                };
+            case "Done":
+                return {
+                    transition: "0.7s",
+                    position: "relative",
+                    borderRadius: "50%",
+                    width: "20px",
+                    height: "20px",
+                    backgroundColor: "transparent",
+                    border: "2px solid #3498db",
+                };
+            case "In Progress":
+                return {
+                    transition: "0.7s",
+                    position: "relative",
+                    borderRadius: "50%",
+                    width: "20px",
+                    height: "20px",
+                    backgroundColor: "transparent",
+                    borderRight: "2px solid #3498db",
+
+                };
+            default:
+                return {};
+        }
+    };
+
     return (
         <div className="Task--Container">
             <div className="task--description">
@@ -117,7 +156,7 @@ export default function Task(props) {
                 <p onClick={handleStatus}>{status}</p>
             </div>
             <div className="task--loader">
-                <p>Loader</p>
+                <div style={getLoaderStyle()}></div>
             </div>
             <div className="task--buttons">
                 <div className="task--button" onClick={edit}>
